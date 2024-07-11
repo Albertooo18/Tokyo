@@ -54,13 +54,18 @@ python image_recognition.py --input /ruta/a/imagenes --output /ruta/a/archivos_c
 Para iniciar el chatbot y hacer preguntas sobre la información en los archivos CSV, usa:
 
 ```bash
-python chatbot.py
+python app.py
 ```
 
 ## Estructura del Proyecto
 
 ```
 .
+├── chatbot
+│   ├── static/           # Archivos estáticos como CSS y JavaScript
+│   ├── templates/        # Plantillas HTML
+│   ├── app.py            # Ejecuta el Servicio para levantar la página para hablar con el Chatbot
+│   └── chatbot.py        # Contiene el código principal para comunicarse con el Chatbot
 ├── data
 │   ├── raw               # Imágenes originales
 │   └── processed         # CSV generados
